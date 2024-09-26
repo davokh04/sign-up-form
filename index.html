@@ -5,8 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="left-container">
+        <img class="background-image" src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="background-leafs-image">
+        <header>
+            <div class="logo-container">
+                <img class="logo-image" src="images/odin-lined.png" alt="odin-logo">
+                <p class="logo-text">ODIN</p>
+            </div>
+        </header>
+        <footer>
+            <small>Photo by Halie West on Unsplash</small>
+        </footer>
+    </div>
+
+    <div class="rigth-container">
+        <div class="intro-text-container">
+            <p class="intro-text">
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                Sign up <span class="intro-text-span">now</span> to get started.
+            </p>
+            <p class="slogan">
+                You <span class="slogan-span">know</span> you want to.
+            </p>
+        </div>
+        <form class="sign-up-container">
+            <fieldset class="sign-up">
+                <legend>Let's do this!</legend>
+                <div>
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name">
+                </div>
+                <div>
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name">
+                </div>
+                <div>
+                    <label for="user-email">EMAIL</label>
+                    <input type="email" id="user-email">
+                </div>
+                <div>
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="number" id="phone-number">
+                </div>
+                <div>
+                    <label for="user-password">PASSWORD</label>
+                    <input type="password" id="user-password">
+                </div>
+                <div>
+                    <label for="user-confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="user-confirm-password">
+                </div>
+                
+            </fieldset>
+        </form>
+        <div class="buttons-container">
+            <button class="create-account">Create Account</button>
+            <span class="already-have-account">Already have an acount? <a href="">Log In</a></span>
+        </div>
+    </div>
 </body>
 </html>

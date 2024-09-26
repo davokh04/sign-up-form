@@ -1,0 +1,185 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: inherit;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.left-container {
+    display: flex;
+    position: relative;
+    flex: 1;
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 200px;
+    background-color: rgba(0, 0, 0, 0.514);
+    height: 160px;
+    width: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.logo-image {
+    width: 100px;
+}
+
+.logo-text {
+    color: white;
+    font-family: Norse-Bold;
+    font-size: 90px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-family: Roboto;
+}
+
+.rigth-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    flex: 2;
+    min-height: 100vh;
+}
+
+.intro-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 60px 40px;
+    row-gap: 30px;
+    flex: 2;
+}
+
+.intro-text, .slogan, legend {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 25px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.267);
+    color: rgb(52, 56, 61);
+}
+
+.intro-text {
+    width: 70%;
+}
+
+.slogan-span, .intro-text-span {
+    font-style: italic;
+}
+
+.sign-up-container {
+    background-color: white;
+    padding: 60px 40px;
+    flex: 3;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.096);
+}
+
+.sign-up {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    border: 0;
+}
+
+.buttons-container {
+    flex: 2;
+}
+
+div>label+input {
+    display: flex;
+}
+
+label {
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 600;
+    color: rgb(87, 81, 81);
+}
+
+input {
+    font-size: 20px;
+    font-family: Roboto;
+    color: rgb(87, 81, 81);
+    border-radius: 4px;
+    border: 1px solid rgb(221, 216, 216);
+    padding: 5px;
+}
+
+legend {
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    row-gap: 25px;
+    flex-direction: column;
+    padding: 60px 40px;
+    width: 350px;
+}
+
+.create-account {
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #596D48;
+    box-shadow: 1px 1px 5px gray;
+    border: transparent;
+}
+
+.already-have-account, a {
+    font-size: 17px;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+a {
+    font-weight: bold;
+    color:#596D48 ;
+}
+
+a::before {
+    outline: 0;
+}
