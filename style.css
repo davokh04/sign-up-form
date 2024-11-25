@@ -1,0 +1,169 @@
+@font-face {
+    font-family: norse;
+    src: url(fonts/norse-bold-webfont.woff),
+        url(fonts/norse-bold-webfont.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    color: white;
+}
+
+.left-container {
+    background-color: gray;
+    flex-basis: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-container {
+    width: 100%;
+    height: 200px;
+    flex-basis: 200px;
+    background-color: rgba(0, 0, 0, 0.384);
+    position: absolute;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo + p {
+    font-family: norse;
+    font-size: 100px;
+}
+
+.footer-container {
+    position: absolute;
+    bottom: 10px;
+}
+
+.right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.up-container {
+    background-color: rgb(247, 247, 247);
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.349);
+}
+
+.text {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-weight: 600;
+}
+
+.middle-container {
+    background-color: white;
+    padding: 50px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.13);
+    position: relative;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    border: none;
+}
+
+legend {
+    margin-bottom: 30px;
+}
+
+.down-container {
+    background-color: rgb(247, 247, 247);
+    flex: 1;
+    padding: 50px;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+fieldset div label {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+} 
+
+legend {
+    text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.349);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+input {
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.349);
+    border-radius: 5px;
+    padding: 7px 5px;
+    width: 400px;
+    flex: 1;
+}
+
+input:focus {
+    outline-color: aqua;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 15px 50px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: #596D48;
+    box-shadow: 1px 1px 3px black;
+}
